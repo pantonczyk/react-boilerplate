@@ -1,0 +1,12 @@
+.notification__list {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 370px;
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%, 0);
+    z-index: $z-index1000;
+    align-items: center;
+    margin: auto;
+}

@@ -1,0 +1,125 @@
+.users {
+    margin: auto;
+    padding: 30px;
+    max-width: 100%;
+}
+
+.users__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: $bg-white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+
+    @media (max-width: 768px) {
+        padding: 30px 40px;
+    }
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    .card__title {
+        font-size: 1.6rem;
+        color: $card-titile;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+.users__form {
+    width: 70%;
+    max-width: 600px;
+    margin: auto auto 30px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.form__loading {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.users__table {
+    width: 100%;
+    display: table;
+    border-spacing: 1;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .table__header {
+        background-color: $table-header-bg;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $text-white;
+        line-height: 3;
+    }
+
+    .table__row {
+        display: table-row;
+        line-height: 2;
+        cursor: pointer;
+
+        &:not(.table__header) {
+            border-bottom: 2px solid $table-row-border;
+
+            &:hover {
+                background-color: $table-row-header;
+            }
+        }
+
+        @media (max-width: 768px) {
+            padding: 10px 0 7px;
+            display: block;
+
+            &.table__header {
+                padding: 0;
+                height: 8px;
+
+                .table__cell {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .table__cell {
+        font-size: 1.4rem;
+        padding: 6px 12px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            padding: 2px;
+            display: block;
+            text-align: left !important;
+            margin-bottom: 10px;
+
+            &:before {
+                margin-bottom: 3px;
+                content: attr(data-title);
+                font-size: 1rem;
+                line-height: 1;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $text-secondary;
+                display: block;
+            }
+        }
+    }
+}

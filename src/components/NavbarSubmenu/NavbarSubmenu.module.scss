@@ -1,0 +1,31 @@
+.submenu {
+    position: relative;
+    margin: 0 10px 0;
+    cursor: pointer;
+}
+
+.submenu__list {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 106px;
+    min-height: 92px;
+    background: $bg-white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    list-style: none;
+    padding: 20px 0 20px;
+    margin: 0;
+    font-size: 1.4rem;
+    color: $text-primary;
+}
+
+.list__item {
+    padding: 5px 0 5px 20px;
+    width: 100%;
+    margin: 0;
+
+    &:hover {
+        background-color: $bg-gray;
+    }
+}

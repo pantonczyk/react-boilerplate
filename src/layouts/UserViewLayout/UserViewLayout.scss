@@ -1,0 +1,13 @@
+.userLayout__content {
+    padding-top: 70px;
+    transition: 0.4s all linear;
+    margin-left: 0;
+}
+.userLayout__content--active {
+    @extend .userLayout__content;
+    margin-left: 225px;
+
+    @media (max-width: 768px) {
+        overflow: hidden;
+    }
+}

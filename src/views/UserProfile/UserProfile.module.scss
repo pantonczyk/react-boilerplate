@@ -1,0 +1,55 @@
+.userProfile {
+    margin: auto;
+    padding: 30px;
+    max-width: 100%;
+}
+
+.userProfile__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: $bg-white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card__form {
+    margin: 30px 70px;
+    display: flex;
+
+    .form__content {
+        width: 60%;
+        max-width: 500px;
+    }
+
+    .form__info {
+        align-items: center;
+        width: 40%;
+        font-size: 1.5rem;
+        color: $text-blue;
+        margin: auto 0;
+        padding-left: 70px;
+
+        p {
+            width: auto;
+            max-width: 200px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin: 30px 40px;
+
+        .form__content {
+            width: 90%;
+            margin: auto;
+        }
+
+        .form__info {
+            display: none;
+        }
+    }
+}
+
+.card__line {
+    width: 100%;
+    border-bottom: 1px solid $card-border-line;
+}

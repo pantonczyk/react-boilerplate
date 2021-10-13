@@ -1,0 +1,39 @@
+.editUser {
+    margin: auto;
+    padding: 30px;
+    max-width: 100%;
+}
+
+.editUser__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: $bg-white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px 70px;
+
+    @media (max-width: 768px) {
+        padding: 30px 40px;
+    }
+}
+
+.editUser__form {
+    width: 70%;
+    margin: auto;
+    max-width: 600px;
+
+    .form__titile {
+        font-size: 1.6rem;
+        color: $card-titile;
+        font-weight: 500;
+        margin-bottom: 50px;
+
+        span {
+            color: $text-radical-red;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}

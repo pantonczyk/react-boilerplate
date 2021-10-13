@@ -1,0 +1,23 @@
+.applicationOverviewNav {
+    margin-left: 2px;
+    position: fixed;
+    height: 100%;
+    width: 207px;
+    background-color: $bg-blue;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: rgba(23, 28, 54, 0.1);
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: rgba(23, 28, 54, 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba(23, 28, 54, 0.1);
+    }
+}

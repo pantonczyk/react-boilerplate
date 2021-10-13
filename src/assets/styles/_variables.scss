@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*========== Font and typography ==========*/
+$font: 'Roboto', sans-serif;
+
+/*========== Z-index ==========*/
+$z-index1: 1;
+$z-index10: 10;
+$z-index100: 100;
+$z-index1000: 1000;
+
+/*========== Colors ==========*/
+
+$bg-white: #ffffff;
+$bg-blue: rgba(219, 223, 240, 1);
+$bg-gray: rgba(237, 239, 247, 1);
+$bg-nav-panel: #1b203c;
+
+$text-primary: #1b203c;
+$text-secondary: #757575;
+$text-white: #ffffff;
+$text-blue: #8a91b8;
+$text-radical-red: #ff2b59;
+
+$alert-success-primary: #00a69a;
+$alert-success-secondary: #e5f6f4;
+$alert-failure-primary: #fc642d;
+$alert-failure-secondary: #feefea;
+
+$button-primary: #ff2b59;
+$button-secondary: #ffffff;
+
+$input-border-line-inactive: #757575;
+$input-border-line-active: #ff2b59;
+$input-border-line-gray: #757575;
+
+$input-checkbox: #777777;
+$input-checkbox-inactive: #b6b6b6;
+$input-check-icon: #ff2b59;
+
+$languags-dropdown-bg: #002061;
+$languages-dropdown-hover: #ff2b59;
+
+$card-titile: rgba(27, 32, 60, 0.56);
+$card-border-line: #e8e8eb;
+$table-header-bg: rgba(27, 32, 60, 0.85);
+$table-row-border: #e8e8eb;
+$table-row-header: #e8e8eb;
+
+$select-options-item-hover: #ff2b59;
+
+$loading-circle-one: #9370db;
+$loading-circle-two: #ba55d3;
+$loading-circle-three: #ff00ff;
+
+$nav-border: #d3d3d9;
+$nav-bg-hover: #ff2b59;
+$nav-bg-active: #0f1324;

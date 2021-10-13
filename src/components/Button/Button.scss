@@ -1,0 +1,36 @@
+.button {
+    width: auto;
+    min-width: 125px;
+    height: 36px;
+    padding: 0 26px 0 26px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 14px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 18px;
+}
+
+.button--disabled {
+    cursor: default;
+}
+
+.button--primary {
+    background-color: $button-primary;
+    color: $text-white;
+}
+
+.button--secondary {
+    border: 1px solid rgba(27, 32, 60, 0.26) !important;
+    background-color: transparent;
+    color: $text-secondary;
+}
+
+.button--uppercase {
+    text-transform: uppercase;
+}
+
+.button--capitalize {
+    text-transform: capitalize;
+}

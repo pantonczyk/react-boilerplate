@@ -1,0 +1,35 @@
+.applicationNav {
+    display: flex;
+    height: 56px;
+    padding: 0 15px;
+    background-color: $bg-blue;
+    width: 100%;
+    margin: 0;
+
+    .applicationNav__item {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $text-secondary;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: 0 15px;
+        cursor: pointer;
+
+        &--active {
+            color: $text-radical-red;
+            background-color: $bg-gray;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 0;
+
+        .applicationNav__item {
+            font-size: 1.1rem;
+            padding: 0 10px;
+        }
+    }
+}
